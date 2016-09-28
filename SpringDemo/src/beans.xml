@@ -1,0 +1,7 @@
+<beans>
+    <bean id="stuDao" class="impl.StudentDaoImpl"></bean>
+    
+    <bean id="stuService" class="impl.StudentServiceImpl">
+        <property name="stuDao" bean="stuDao"/>
+    </bean>
+</beans>
